@@ -11,6 +11,8 @@ This is the game interface
 
 ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/71844334/107122976-ff3b0680-68c0-11eb-9426-8601fa624f18.gif)
 
+Future destiny of this artifact might be to make it react and hardware friendly
+
 
 
 
