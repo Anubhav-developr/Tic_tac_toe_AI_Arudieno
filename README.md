@@ -1,4 +1,4 @@
-# Tic_tac_toe_AI_Arudieno
+# Tic_tac_toe_AI_Arduino
 This is powerful AI based tic tac toe game working with arudieno.(hardware part is still in progress)
 This game have an unbeatable AI which i made through MINIMAX ALGORITHM blended with javascript, it contain two pages 
 1) first page : this is the entry part of our game(under development )
