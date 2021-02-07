@@ -109,7 +109,7 @@ window.onload = function() {
 					filled[num-1] = true;
 					
 					if(winnerCheck(symbol,symbol[num-1]) === true) {
-						document.getElementById("result").innerText = "Player '" + symbol[num-1] + "' won!";
+						document.getElementById("result").innerText = "ROBOT WON , IT'S OK YOU CAN TRY AGAIN!!";
 						gameOver = true;
 						
 					}
@@ -164,7 +164,7 @@ window.onload = function() {
 				
 				//winner check - ai wins
 				if(winnerCheck(symbol, symbol[nextMove.id]) === true) {
-					document.getElementById("result").innerText = "Player '" + symbol[nextMove.id] + "' won!";
+					document.getElementById("result").innerText =  "ROBOT WON , IT'S OK YOU CAN TRY AGAIN!!" ;
 					gameOver = true;
 				}
 				
@@ -270,15 +270,3 @@ window.onload = function() {
 
 	
 };
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
