@@ -1,4 +1,4 @@
-# Tic_tac_toe_AI_Arduino
+# Tic_tac_toe_AI_Arudieno
 This is powerful AI based tic tac toe game working with arudieno.(hardware part is still in progress)
 This game have an unbeatable AI which i made through MINIMAX ALGORITHM blended with javascript, it contain two pages 
 1) first page : this is the entry part of our game(under development )
@@ -16,31 +16,6 @@ we can make its look more attractive and appealing by classic CSS and we can add
 also we can also add specific sounds after user's move and can delay our robot's move and can add animation for better interface of our game.
 
 
-to play using joystick 
-you need to have (taken from site for reference)
-
-
-Arduino Leonardo, Micro, or Due board
-
-2 axis joystick
-
-momentary pushbutton (possibly integrated in the joystick)
-
-LED
-
-220 ohm resistor
-
-10k ohm resistor (if needed as pulldown)
-
-![layout](https://user-images.githubusercontent.com/71844334/116825017-cbfbd100-abaa-11eb-8418-6f09ceff50bf.png)
-
-
-connect the wires as shown 
-
-open arduino ide from your laptop
-, select your corresponding arduino and connect it .
-now
-voila!! , you can control your mouse with the help of joystick .
 
 
 

@@ -1,7 +1,10 @@
 //6 parts 
 window.onload = function() {
 	//1. Initial states
+	var gameEnd = new Audio("gameend.wav")
 	var num;
+	var moveSoundH;
+	var moveSoundA;
 	var box;
 	var ctx;
 	var turn = 1;
@@ -12,6 +15,8 @@ window.onload = function() {
 	var human = 'X';
 	var ai = 'O';
 	var result = {};
+	moveSoundH = new Audio("audio1 (1).mp3");
+	moveSoundA = new Audio("audio1 (2).wav");
 	filled = new Array();
 	symbol = new Array();
 	winner = [[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]];
@@ -33,11 +38,16 @@ window.onload = function() {
 	//canvas click event
 	document.getElementById("tic").addEventListener("click",function(e){
 		boxClick(e.target.id);
+
+		
+		
+
+
 	});
 	
 	//2.Drawing X's and O's
 	//Draw X
-	function drawX() {
+	function drawX() {         
 		box.style.backgroundColor = "#fb5181";
 		ctx.beginPath();
 		ctx.moveTo(15,15);
@@ -48,14 +58,14 @@ window.onload = function() {
 		ctx.lineCap = "round";
 		ctx.strokeStyle = "white";
 		ctx.stroke();
-		ctx.closePath();
+		ctx.closePath(); 
 		
-		symbol[num-1] = human;
+		symbol[num-1] = human; // it will put the x on the board at required index of the board
 	}
 	
 	//Drawing O
 	function drawO(next) {
-		box.style.backgroundColor = "#93f273";
+		box.style.backgroundColor = "#7f00ff";
 		ctx.beginPath();
 		ctx.arc(50,50,35,0,2*Math.PI);
 		ctx.lineWidth = 20;
@@ -120,7 +130,10 @@ window.onload = function() {
 					}
 					
 					if(turn%2 == 0) {
-						playAI();
+						
+						setTimeout(playAI,1000);
+						
+						
 					}
 				}
 			}
@@ -164,13 +177,16 @@ window.onload = function() {
 				
 				//winner check - ai wins
 				if(winnerCheck(symbol, symbol[nextMove.id]) === true) {
-					document.getElementById("result").innerText =  "ROBOT WON , IT'S OK YOU CAN TRY AGAIN!!" ;
+					document.getElementById("result").innerText =  "COMPUTER WON , IT'S OK YOU CAN TRY AGAIN!!" ;
+				setTimeout(pleyy(),1000);
+
 					gameOver = true;
 				}
 				
 				//draw condition
 				if(turn > 9 && gameOver !== true) {
 					document.getElementById("result").innerText = "GAME OVER! IT WAS A DRAW!";
+					
 				}
 			}
 		}
@@ -210,7 +226,7 @@ window.onload = function() {
 		for(var i=0; i<empty.length; i++) {
 			//current move - index of current move,score
 			var curMove = {};
-			//generate the new board with the current move
+			//generate the new board with the current move     
 			curMove.id = empty[i]; //4
 			newSymbol[empty[i]] = player; //AI
 			
@@ -268,5 +284,32 @@ window.onload = function() {
 	}
 	
 
+	function pley(){
+
+		moveSoundA.play();
+	
+	}
+	
+	function pleyy(){
+		gameEnd.play();
+	}
+
+	
 	
 };
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
