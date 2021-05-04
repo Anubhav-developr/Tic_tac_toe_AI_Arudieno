@@ -1,7 +1,8 @@
 # Tic_tac_toe_AI_Arudieno
-This is powerful AI based tic tac toe game working with arudieno.(hardware part is still in progress)
+play from [here](https://anubhav-developr.github.io/Tic_tac_toe_AI_Arudieno/)
+This is powerful AI based tic tac toe game working with arudieno.
 This game have an unbeatable AI which i made through MINIMAX ALGORITHM blended with javascript, it contain two pages 
-1) first page : this is the entry part of our game(under development )
+1) first page : this is the entry part of our game
 2) game page : this is the main game page
 
 ![tivvvvv](https://user-images.githubusercontent.com/71844334/116964108-4d955100-acc8-11eb-86a2-8218d8cd4451.jpg)
